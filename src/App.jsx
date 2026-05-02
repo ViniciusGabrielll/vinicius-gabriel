@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./App.module.css";
 
 import fotoDePerfil from "./assets/fotoDePerfil.png";
-import instagram from "./assets/icones/instagram.png";
+import instagram from "./assets/icones/Instagram.png";
 import seta from "./assets/icones/seta.png";
 
 import cybertech from "./assets/cards/cybertech.png";
