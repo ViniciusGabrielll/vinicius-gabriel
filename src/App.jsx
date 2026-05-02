@@ -80,7 +80,6 @@ function App() {
               <h3>Fisioterapeuta Sarah</h3>
               <p className={styles.descricao}>
                 Landing page criada para portfólio da Fisioterapeuta Sarah Lima
-                Vieira
               </p>
               <div className={styles.saberMais}>
                 <img src={seta} alt="" />

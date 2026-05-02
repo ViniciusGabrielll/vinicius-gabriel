@@ -73,7 +73,7 @@
 
 .infoExtra {
   width: 100%;
-  min-height: 150px;
+  height: 150px;
   position: absolute;
   bottom: 0;
   background-color: var(--cor-fundo);
@@ -125,25 +125,41 @@
 
 @media (max-width: 700px) {
   .card {
-    width: 450px;
-    height: 270px;
+    width: 70vw;
+    height: auto;
     position: relative;
+  }
+
+  .cardLink {
+    border-radius: 10px;
+    position: static;
+    width: 100%;
+    left: 0;
+    top: -60px;
+    z-index: 2;
   }
 
   .infoExtra {
     width: 100%;
-    min-height: 150px;
-    position: absolute;
-    bottom: 80px;
-    background-color: var(--cor-fundo);
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+    height: 70px;
+    position: static;
+    background: none;
+    box-shadow: none;
     transition: 0.4s ease;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border-radius: 0px 0px 50px 0px;
+    border-radius: 0px 0px 50px 50px;
     border: none;
     cursor: pointer;
+  }
+
+  .saberMais {
+    display: none;
+  }
+
+  .open {
+    transform: translateY(0px);
   }
 
   .cardsArticle {
