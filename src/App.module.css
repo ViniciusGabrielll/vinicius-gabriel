@@ -1,0 +1,124 @@
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.nav h2 {
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--cor-principal);
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.nav a img {
+  width: 50px;
+  transition: 0.3s;
+  filter: opacity(0.9);
+}
+
+.nav a:hover img {
+  filter: opacity(1);
+}
+
+.fotoDePerfil {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.title {
+  font-family: "League Spartan", sans-serif;
+  font-weight: bold;
+  font-size: 64px;
+  margin-bottom: 100px;
+}
+
+.cardsArticle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  margin-bottom: 180px;
+}
+
+.card {
+  width: 600px;
+  height: 270px;
+  position: relative;
+}
+
+.cardLink {
+  border-radius: 10px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: -60px;
+  z-index: 2;
+}
+
+.cardLink:hover img {
+  filter: brightness(0.8);
+}
+
+.cardImg {
+  width: 100%;
+  transition: 0.2s;
+}
+
+.infoExtra {
+  width: 100%;
+  min-height: 150px;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--cor-fundo);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  transition: 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  border-radius: 0px 0px 50px 0px;
+  border: none;
+  cursor: pointer;
+}
+
+.infoExtra h3 {
+  margin: 0;
+  color: var(--cor-principal);
+}
+
+.descricao  {
+  color: var(--cor-texto);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.saberMais {
+  position: absolute;
+  bottom: -29px;
+  left: 0;
+  width: 150px;
+  height: 30px;
+  background-color: var(--cor-fundo);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 29px 0px;
+  color: var(--cor-texto);
+  border-radius: 0px 0px 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.saberMais img {
+  width: 15px;
+  filter: invert();
+}
+
+.open {
+  transform: translateY(60px);
+}

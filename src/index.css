@@ -1,0 +1,50 @@
+:root {
+  --cor-fundo: #151518;
+  --cor-principal: #008cff;
+  --cor-texto: #f9f9f9;
+  --padding: 15vw;
+}
+
+::selection {
+  background-color: var(--cor-principal);
+  color: var(--cor-fundo);
+}
+
+::-webkit-selection {
+  background-color: #008cff;
+  color: #fff;
+}
+
+body {
+  min-height: 100vh;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  background: var(--cor-fundo);
+  background: linear-gradient(
+    180deg,
+    rgba(21, 21, 24, 1) 0%,
+    rgba(6, 42, 71, 1) 100%
+  );
+
+  background-repeat: no-repeat;
+
+  text-align: center;
+
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  color: var(--cor-texto);
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+}
+
+button {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: var(--cor-texto);
+}
